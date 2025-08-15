@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+$flex-props: flex,space-between, space-around, space-evenly, center, end;
+
+@each $item in $flex-props {
+    .#{$item} {
+        @if $item == flex {
+            @include flex;
+        } @else {
+            @include flex($item)
+        };
+    }
+} 
+
+.grow {
+    flex-grow: 1;
+}

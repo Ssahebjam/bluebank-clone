@@ -1,0 +1,26 @@
+@use "../abstracts/breakpoints" as *;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+.container {
+  padding-inline: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+@each $name, $value in $grid-breakpoints {
+  @if map-has-key($container-max-widths, $name) {
+    @media (min-width: #{$value}) {
+      .container {
+        max-width: map-get($container-max-widths, $name);
+      }
+    }
+  }
+}

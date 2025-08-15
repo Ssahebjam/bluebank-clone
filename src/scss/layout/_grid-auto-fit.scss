@@ -1,0 +1,11 @@
+.grid-auto-fit {
+    --max-col-count: 3;
+    --col-min-width: 250px;
+    --col-gap: 1rem;
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--col-min-width), 100%), 1fr));
+    max-width: calc(var(--max-col-count) * var(--col-min-width) + var(--max-col-count) * var(--col-gap));
+    gap: var(--col-gap);
+}

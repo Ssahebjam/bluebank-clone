@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+#site-head {
+    padding-block: 2rem;
+
+    background-color: #{$header-bg};
+    
+    --logo-gap: 2px;
+    --logo-pad-x: 0;
+    --logo-pad-y: 0;
+
+    --nav-gap: 0px;
+
+    @include flex-between;
+}

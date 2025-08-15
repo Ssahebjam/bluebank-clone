@@ -1,0 +1,21 @@
+$header-bg: null;
+
+$primary: red;
+$secondary: null;
+$success: null;
+$info: null;
+$warning: null;
+$danger: null;
+$dark: null;
+$light: null;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

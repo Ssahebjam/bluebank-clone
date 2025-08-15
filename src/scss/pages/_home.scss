@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "../abstracts" as *;
+
+.home {
+    display: grid;
+    grid-template-areas: "home home aside aside";
+    main {
+        grid-area: home;
+    }
+}
+@media (max-width: map.get($grid-breakpoints, "lg")) {
+    .home {
+    display: block;
+    }
+}
