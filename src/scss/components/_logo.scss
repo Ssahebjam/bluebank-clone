@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.logo {
+    @include flex;
+
+    gap: var(--logo-gap);
+
+    padding: var(--logo-pad-y) var(--logo-pad-x);
+}

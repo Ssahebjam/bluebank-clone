@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+// makeing utilitys for text and background color 
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+        background-color: #{$value};
+    }
+
+    .text-#{$color} {
+        color: #{$value} !important;
+    }
+}
