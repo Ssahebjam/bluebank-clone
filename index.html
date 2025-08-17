@@ -154,6 +154,47 @@
           </div>
         </div>
       </section>
+
+      <!-- gallery-section -->
+      <section class="gallery-section">
+        <!-- galley-section title & paragraph -->
+        <h2>بلو فقط آبی نیست</h2>
+        <p class="text-muted">کارت‌های بلو</p>
+
+        <!-- galley-section video and images -->
+        <div id="gallery">
+          <div class="gallery-video card">
+            <!-- gallery-section video loop -->
+            <video autoplay loop>
+              <source src="./public/card-blue-video-cbg.webm" />
+              <source src="./public/card-blue-video-cbg.mp4" />
+            </video>
+
+            <!-- div for wrapping buttons that change the color of gallery -->
+            <!-- when i click on one of this buttons i want js to rerender the gallery element with the color selected -->
+            <div class="gallery-btn-group">
+              <button id="galleryBtnBlue" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnRed" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnGreen" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnPurple" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnYellow" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnRosegold" type="button" class="btn gallery-btn"></button>
+              <button id="galleryBtnBlack" type="button" class="btn gallery-btn"></button>
+            </div>
+
+          </div>
+
+          <!-- second col of gallery for images -->
+          <div>
+            <div class="card">
+              <img src="./public/card-blue-render-back.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./public/card-blue-render-front.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 </body>
