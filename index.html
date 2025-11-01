@@ -1,291 +1,312 @@
 <!doctype html>
 <html lang="fa_IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluebank-clone</title>
+    <link rel="stylesheet" href="./src/scss/stylesheet.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bluebank-clone</title>
-  <link rel="stylesheet" href="./src/scss/stylesheet.scss" />
-</head>
-
-<body>
-  <!-- header of website -->
-  <header class="site-header">
-    <!-- entry-banner -->
-    <div id="entry-banner">
-      <div class="container">
-        <!-- picture tag that displays banner for mobile and desktop -->
-        <picture>
-          <source media="(min-width:1001px)" srcset="./public/blu-banner-desktop.webp" />
-          <img src="./public/blu-banner-mobile.webp" alt="ٔدو هدیه ۱۰۰ هزار تومانی مخصوص فرستنده و گیرنده" />
-        </picture>
-
-        <!-- close button for entry-banner -->
-        <button id="closeBtn" class="btn"></button>
+  <body>
+    <header class="site-header">
+      <div id="entry-banner">
+        <div class="container">
+          <picture>
+            <source
+              media="(min-width:1001px)"
+              srcset="./public/blu-banner-desktop.webp"
+            />
+            <img
+              src="./public/blu-banner-mobile.webp"
+              alt="ٔدو هدیه ۱۰۰ هزار تومانی مخصوص فرستنده و گیرنده"
+            />
+          </picture>
+          <button id="closeBtn" class="btn"></button>
+        </div>
       </div>
-    </div>
 
-    <!-- header navigation & logo & download link -->
-    <div class="container">
-      <!-- navbar-toggler button display only in mobile & tablet -->
-      <button id="navbarToggler" type="button" class="btn"></button>
-
-      <!-- navigaion list and logo -->
-      <nav>
-        <a href="#"><img src="./public/logo.svg" alt="صفحه خانه" /></a>
-        <ul>
-          <li><a href="#">خدمات</a></li>
-          <li><a href="#">وام</a></li>
-          <li><a href="#">بازکردن حساب</a></li>
-          <li><a href="#">بلوجونیور</a></li>
-          <li><a href="#">تماس با ما</a></li>
-          <li><a href="#">سوالات متداول</a></li>
-          <li><a href="#">بلاگ</a></li>
-        </ul>
-      </nav>
-
-      <!-- download link for desktop -->
-      <a href="#" class="btn"> دانلود و نصب بلو</a>
-
-      <!-- download link for mobile and tablet -->
-      <a href="#" class="btn"><img src="./public/download-blu.svg" alt="دانلود اپ بلو" /></a>
-    </div>
-  </header>
-
-  <!-- main content -->
-  <main>
-    <!-- this contaner is for hero-section & features-section & gallery & why-us -->
-    <div class="container">
-      <!-- hero section -->
-      <section class="hero-section">
-        <!-- hero section body and content -->
-        <div class="hero-body">
-          <h1><span class="text-primary">بلو،</span> بانک ولی دوست‌داشتنی</h1>
-          <p>
-            بلو،بانکی تمام دیجیتال است که همه عملیات بانکی کاملا آنلاین و با
-            اپلیکیشن بلو انجام می‌شود.
-          </p>
-          <a href="#" class="btn btn-primary">دانلود اپلیکیشن</a>
-          <button type="button" class="btn btn-nude text-primary">
-            ویديومعرفی بلو
-          </button>
-
-          <!-- hero body graidient background effects -->
-          <div class="hero-background-effect">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-
-        <!-- hero section back circles -->
-        <div class="hero-backcircles">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
-        <!-- hero section orbit animated -->
-        <div class="hero-orbit">
-          <!-- 8 span with feature icon inside it for animating -->
-          <span> <img src="./public/hero-icon-1.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-2.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-3.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-4.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-5.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-6.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-7.png" alt="" /> </span>
-          <span> <img src="./public/hero-icon-8.png" alt="" /> </span>
-        </div>
-      </section>
-
-      <!-- features-section -->
-      <section class="features-section">
-        <div class="even-col">
-          <img src="./public/card-image-rocket.webp" alt="" />
-          <div>
-            <h2>سریع</h2>
-            <p>
-              انجام تمام کارهای بانکی مثل بازکردن حساب، گرفتن وام و... در کمتر
-              از ۷ دقیقه
-            </p>
-          </div>
-        </div>
-        <div class="even-col-reverse">
-          <img src="./public/card-image-bank.webp" alt="" />
-          <div>
-            <h2>آسان</h2>
-            <p>
-              انجام تمام کارهای بانکی به صورت آنلاین فقط از طریق اپلیکیشن بلو
-            </p>
-          </div>
-        </div>
-        <div class="even-col">
-          <img src="./public/card-image-safety.webp" alt="" />
-          <div>
-            <h2>امن</h2>
-            <p>
-              کوتاه شدن دست کلاه‌برداران مجازی و حقیقی از سرمایه‌ی شما با
-              استفاده از سرویس‌های باکس پس‌انداز و مسدود سازی کارت و....
-            </p>
-
-            <!-- nude primary button for features-section -->
-            <a class="btn btn-primary btn-nude" href="#">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12 3.29688C9.37665 3.29688 7.25 5.42352 7.25 8.04688C7.25 10.6702 9.37665 12.7969 12 12.7969C14.6234 12.7969 16.75 10.6702 16.75 8.04688C16.75 5.42352 14.6234 3.29688 12 3.29688ZM8.75 8.04688C8.75 6.25195 10.2051 4.79688 12 4.79688C13.7949 4.79688 15.25 6.25195 15.25 8.04688C15.25 9.8418 13.7949 11.2969 12 11.2969C10.2051 11.2969 8.75 9.8418 8.75 8.04688Z"
-                  fill="#4e91e6"></path>
-                <path
-                  d="M15 18.0469C14.4477 18.0469 14 18.4946 14 19.0469V19.0569C14 19.6092 14.4477 20.0569 15 20.0569H15.01C15.5623 20.0569 16.01 19.6092 16.01 19.0569V19.0469C16.01 18.4946 15.5623 18.0469 15.01 18.0469H15Z"
-                  fill="#4e91e6"></path>
-                <path
-                  d="M15 15.7969C16.7949 15.7969 18.25 17.2519 18.25 19.0469V20.0469C18.25 20.4611 18.5858 20.7969 19 20.7969C19.4142 20.7969 19.75 20.4611 19.75 20.0469V19.0469C19.75 16.4235 17.6234 14.2969 15 14.2969H11C10.5858 14.2969 10.25 14.6327 10.25 15.0469C10.25 15.4611 10.5858 15.7969 11 15.7969H15Z"
-                  fill="#4e91e6"></path>
-                <path
-                  d="M7.25 15.0469C7.25 14.6327 6.91421 14.2969 6.5 14.2969C6.08579 14.2969 5.75 14.6327 5.75 15.0469V16.7969H4C3.58579 16.7969 3.25 17.1327 3.25 17.5469C3.25 17.9611 3.58579 18.2969 4 18.2969H5.75V20.0469C5.75 20.4611 6.08579 20.7969 6.5 20.7969C6.91421 20.7969 7.25 20.4611 7.25 20.0469V18.2969H9C9.41421 18.2969 9.75 17.9611 9.75 17.5469C9.75 17.1327 9.41421 16.7969 9 16.7969H7.25V15.0469Z"
-                  fill="#4e91e6"></path>
-              </svg>
-              راهنمای باز کردن حساب
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- gallery-section -->
-      <section class="gallery-section">
-        <!-- galley-section title & paragraph -->
-        <h2>بلو فقط آبی نیست</h2>
-        <p class="text-muted">کارت‌های بلو</p>
-
-        <!-- galley-section video and images -->
-        <div id="gallery">
-          <!-- gallery-section video and images -->
-          <div class="gallery-video card">
-            <!-- gallery-section video loop -->
-            <video autoplay loop>
-              <source src="./public/card-blue-video-cbg.webm" />
-              <source src="./public/card-blue-video-cbg.mp4" />
-            </video>
-
-            <!-- div for wrapping buttons that change the color of gallery -->
-            <!-- when i click on one of this buttons i want js to rerender the gallery element with the color selected -->
-            <div class="gallery-btn-group">
-              <button id="galleryBtnBlue" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnRed" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnGreen" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnPurple" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnYellow" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnRosegold" type="button" class="btn gallery-btn"></button>
-              <button id="galleryBtnBlack" type="button" class="btn gallery-btn"></button>
-            </div>
-          </div>
-
-          <!-- second col of gallery for images -->
-          <div>
-            <div class="card">
-              <img src="./public/card-blue-render-back.png" alt="" />
-            </div>
-            <div class="card">
-              <img src="./public/card-blue-render-front.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- why-us section with animated images and buttons -->
-      <section>
-        <!-- first card with animated button -->
-        <div class="card card-animated">
-          <h2>سود تو بیگ باکسه</h2>
-
-          <p>
-            با ساخت حساب بلند مدت در اپلیکیشن بلو برای سرمایه‌گذاری در ۳ ماه
-            ۱۲ درصد، ۶ ماه ۱۷ درصد و برای ۱۲ ماه تا ۲۰/۵ درصد سود دریافت کنید.
-          </p>
-
-          <img src="./public/mountain.webp" alt="" />
-
-          <!-- animated button -->
-          <div id="btnAnimated" class="btn btn-primary">
-            <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.9987 8C6.9987 7.44772 7.44641 7 7.9987 7L21.332 7C21.8843 7 22.332 7.44772 22.332 8C22.332 8.55228 21.8843 9 21.332 9L10.4129 9L26.0391 24.6262C26.4297 25.0167 26.4297 25.6499 26.0391 26.0404C25.6486 26.431 25.0154 26.431 24.6249 26.0404L8.9987 10.4142L8.9987 21.3333C8.9987 21.8856 8.55098 22.3333 7.9987 22.3333C7.44641 22.3333 6.9987 21.8856 6.9987 21.3333L6.9987 8Z"
-                  fill="#307FE2"></path>
-              </svg></a>
-          </div>
-        </div>
-
-        <!-- other card with out animated button -->
-        <div class="card card-animated">
-          <h2>لذت برگشت پول</h2>
-
-          <p>
-            با خرید روزانه از فروشگاه‌های طرف قرارداد یا درصدی از خرید را
-            تخفیف می‌گیرید یا درصدی از مبلغ به حساب شما برمی‌گردد.
-          </p>
-
-          <img src="./public/blu-img-cashback.webp" alt="" />
-        </div>
-
-        <!-- last card with animated button -->
-        <div class="card card-animated">
-          <h2>وام، ولی دست یافتنی</h2>
-
-          <p>
-            بدون ضامن و وثیقه در کمتر از ۷ دقیقه وام سریع و آسان بلو را دریافت
-            کنید. با میانگین حساب خود در ۳ ماه متوالی می‌توانید از ۳ تا ۴۰
-            میلیون وام بگیرید.
-          </p>
-
-          <img src="./public/blu-img-bag.webp" alt="" />
-
-          <div id="btnAnimated" class="btn btn-primary">
-            <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.9987 8C6.9987 7.44772 7.44641 7 7.9987 7L21.332 7C21.8843 7 22.332 7.44772 22.332 8C22.332 8.55228 21.8843 9 21.332 9L10.4129 9L26.0391 24.6262C26.4297 25.0167 26.4297 25.6499 26.0391 26.0404C25.6486 26.431 25.0154 26.431 24.6249 26.0404L8.9987 10.4142L8.9987 21.3333C8.9987 21.8856 8.55098 22.3333 7.9987 22.3333C7.44641 22.3333 6.9987 21.8856 6.9987 21.3333L6.9987 8Z"
-                  fill="#307FE2"></path>
-              </svg></a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- bluline-section -->
-    <section class="bluline-section">
       <div class="container">
-        <div>
-          <small>بلو لاین</small>
-          <h3>همیشه به وقت همه‌جا</h3>
-          <ul class="bluline-list">
-            <li>۷ روز هفته</li>
-            <li>۲۴ ساعت شبانه روز</li>
-            <li>چت آنلاین و تماس</li>
+        <button id="navbarToggler" type="button" class="btn"></button>
+        <nav>
+          <a href="#"><img src="./public/logo.svg" alt="صفحه خانه" /></a>
+          <ul>
+            <li><a href="#">خدمات</a></li>
+            <li><a href="#">وام</a></li>
+            <li><a href="#">بازکردن حساب</a></li>
+            <li><a href="#">بلوجونیور</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+            <li><a href="#">بلاگ</a></li>
           </ul>
-          <a class="btn btn-secondary"> ارتبات با بلولاین </a>
-        </div>
-
-        <!-- vertical carousel -->
-        <div id="carousel">
-          <div class="carousel-item card">
-            <h4>کاربر بلو</h4>
-            <p>سلام چطور می تونم کمکتون کنم؟</p>
-          </div>
-          <div class="carousel-item card">
-            <h4>کاربر بلو</h4>
-            <p>سلام چطور می تونم کمکتون کنم؟</p>
-          </div>
-          <div class="carousel-item card">
-            <h4>کاربر بلو</h4>
-            <p>سلام چطور می تونم کمکتون کنم؟</p>
-          </div>
-        </div>
+        </nav>
+        <a href="#" class="btn"> دانلود و نصب بلو</a>
+        <a href="#" class="btn"
+          ><img src="./public/download-blu.svg" alt="دانلود اپ بلو"
+        /></a>
       </div>
-    </section>
-  </main>
-</body>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero-section">
+          <div class="hero-body">
+            <h1><span class="text-primary">بلو،</span> بانک ولی دوست‌داشتنی</h1>
+            <p>
+              بلو،بانکی تمام دیجیتال است که همه عملیات بانکی کاملا آنلاین و با
+              اپلیکیشن بلو انجام می‌شود.
+            </p>
+            <a href="#" class="btn btn-primary">دانلود اپلیکیشن</a>
+            <button type="button" class="btn btn-nude text-primary">
+              ویديومعرفی بلو
+            </button>
+            <div class="hero-background-effect">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="hero-backcircles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
 
+          <div class="hero-orbit">
+            <span> <img src="./public/hero-icon-1.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-2.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-3.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-4.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-5.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-6.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-7.png" alt="" /> </span>
+            <span> <img src="./public/hero-icon-8.png" alt="" /> </span>
+          </div>
+        </section>
+
+        <section class="features-section">
+          <div class="even-col">
+            <img src="./public/card-image-rocket.webp" alt="" />
+            <div>
+              <h2>سریع</h2>
+              <p>
+                انجام تمام کارهای بانکی مثل بازکردن حساب، گرفتن وام و... در کمتر
+                از ۷ دقیقه
+              </p>
+            </div>
+          </div>
+          <div class="even-col-reverse">
+            <img src="./public/card-image-bank.webp" alt="" />
+            <div>
+              <h2>آسان</h2>
+              <p>
+                انجام تمام کارهای بانکی به صورت آنلاین فقط از طریق اپلیکیشن بلو
+              </p>
+            </div>
+          </div>
+          <div class="even-col">
+            <img src="./public/card-image-safety.webp" alt="" />
+            <div>
+              <h2>امن</h2>
+              <p>
+                کوتاه شدن دست کلاه‌برداران مجازی و حقیقی از سرمایه‌ی شما با
+                استفاده از سرویس‌های باکس پس‌انداز و مسدود سازی کارت و....
+              </p>
+              <a class="btn btn-primary btn-nude" href="#">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 3.29688C9.37665 3.29688 7.25 5.42352 7.25 8.04688C7.25 10.6702 9.37665 12.7969 12 12.7969C14.6234 12.7969 16.75 10.6702 16.75 8.04688C16.75 5.42352 14.6234 3.29688 12 3.29688ZM8.75 8.04688C8.75 6.25195 10.2051 4.79688 12 4.79688C13.7949 4.79688 15.25 6.25195 15.25 8.04688C15.25 9.8418 13.7949 11.2969 12 11.2969C10.2051 11.2969 8.75 9.8418 8.75 8.04688Z"
+                    fill="#4e91e6"
+                  ></path>
+                  <path
+                    d="M15 18.0469C14.4477 18.0469 14 18.4946 14 19.0469V19.0569C14 19.6092 14.4477 20.0569 15 20.0569H15.01C15.5623 20.0569 16.01 19.6092 16.01 19.0569V19.0469C16.01 18.4946 15.5623 18.0469 15.01 18.0469H15Z"
+                    fill="#4e91e6"
+                  ></path>
+                  <path
+                    d="M15 15.7969C16.7949 15.7969 18.25 17.2519 18.25 19.0469V20.0469C18.25 20.4611 18.5858 20.7969 19 20.7969C19.4142 20.7969 19.75 20.4611 19.75 20.0469V19.0469C19.75 16.4235 17.6234 14.2969 15 14.2969H11C10.5858 14.2969 10.25 14.6327 10.25 15.0469C10.25 15.4611 10.5858 15.7969 11 15.7969H15Z"
+                    fill="#4e91e6"
+                  ></path>
+                  <path
+                    d="M7.25 15.0469C7.25 14.6327 6.91421 14.2969 6.5 14.2969C6.08579 14.2969 5.75 14.6327 5.75 15.0469V16.7969H4C3.58579 16.7969 3.25 17.1327 3.25 17.5469C3.25 17.9611 3.58579 18.2969 4 18.2969H5.75V20.0469C5.75 20.4611 6.08579 20.7969 6.5 20.7969C6.91421 20.7969 7.25 20.4611 7.25 20.0469V18.2969H9C9.41421 18.2969 9.75 17.9611 9.75 17.5469C9.75 17.1327 9.41421 16.7969 9 16.7969H7.25V15.0469Z"
+                    fill="#4e91e6"
+                  ></path>
+                </svg>
+                راهنمای باز کردن حساب
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="gallery-section">
+          <h2>بلو فقط آبی نیست</h2>
+          <p class="text-muted">کارت‌های بلو</p>
+          <div id="gallery">
+            <div class="gallery-video card">
+              <video autoplay loop>
+                <source src="./public/card-blue-video-cbg.webm" />
+                <source src="./public/card-blue-video-cbg.mp4" />
+              </video>
+              <div class="gallery-btn-group">
+                <button
+                  id="galleryBtnBlue"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnRed"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnGreen"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnPurple"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnYellow"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnRosegold"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+                <button
+                  id="galleryBtnBlack"
+                  type="button"
+                  class="btn gallery-btn"
+                ></button>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <img src="./public/card-blue-render-back.png" alt="" />
+              </div>
+              <div class="card">
+                <img src="./public/card-blue-render-front.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="card card-animated">
+            <h2>سود تو بیگ باکسه</h2>
+            <p>
+              با ساخت حساب بلند مدت در اپلیکیشن بلو برای سرمایه‌گذاری در ۳ ماه
+              ۱۲ درصد، ۶ ماه ۱۷ درصد و برای ۱۲ ماه تا ۲۰/۵ درصد سود دریافت کنید.
+            </p>
+            <img src="./public/mountain.webp" alt="" />
+            <div id="btnAnimated" class="btn btn-primary">
+              <a href="#"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9987 8C6.9987 7.44772 7.44641 7 7.9987 7L21.332 7C21.8843 7 22.332 7.44772 22.332 8C22.332 8.55228 21.8843 9 21.332 9L10.4129 9L26.0391 24.6262C26.4297 25.0167 26.4297 25.6499 26.0391 26.0404C25.6486 26.431 25.0154 26.431 24.6249 26.0404L8.9987 10.4142L8.9987 21.3333C8.9987 21.8856 8.55098 22.3333 7.9987 22.3333C7.44641 22.3333 6.9987 21.8856 6.9987 21.3333L6.9987 8Z"
+                    fill="#307FE2"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+          <div class="card card-animated">
+            <h2>لذت برگشت پول</h2>
+            <p>
+              با خرید روزانه از فروشگاه‌های طرف قرارداد یا درصدی از خرید را
+              تخفیف می‌گیرید یا درصدی از مبلغ به حساب شما برمی‌گردد.
+            </p>
+            <img src="./public/blu-img-cashback.webp" alt="" />
+          </div>
+          <div class="card card-animated">
+            <h2>وام، ولی دست یافتنی</h2>
+            <p>
+              بدون ضامن و وثیقه در کمتر از ۷ دقیقه وام سریع و آسان بلو را دریافت
+              کنید. با میانگین حساب خود در ۳ ماه متوالی می‌توانید از ۳ تا ۴۰
+              میلیون وام بگیرید.
+            </p>
+            <img src="./public/blu-img-bag.webp" alt="" />
+            <div id="btnAnimated" class="btn btn-primary">
+              <a href="#"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9987 8C6.9987 7.44772 7.44641 7 7.9987 7L21.332 7C21.8843 7 22.332 7.44772 22.332 8C22.332 8.55228 21.8843 9 21.332 9L10.4129 9L26.0391 24.6262C26.4297 25.0167 26.4297 25.6499 26.0391 26.0404C25.6486 26.431 25.0154 26.431 24.6249 26.0404L8.9987 10.4142L8.9987 21.3333C8.9987 21.8856 8.55098 22.3333 7.9987 22.3333C7.44641 22.3333 6.9987 21.8856 6.9987 21.3333L6.9987 8Z"
+                    fill="#307FE2"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="bluline-section">
+        <div class="container">
+          <div>
+            <small>بلو لاین</small>
+            <h3>همیشه به وقت همه‌جا</h3>
+            <ul class="bluline-list">
+              <li>۷ روز هفته</li>
+              <li>۲۴ ساعت شبانه روز</li>
+              <li>چت آنلاین و تماس</li>
+            </ul>
+            <a class="btn btn-secondary"> ارتبات با بلولاین </a>
+          </div>
+          <div id="carousel">
+            <div class="carousel-item card">
+              <h4>کاربر بلو</h4>
+              <p>سلام چطور می تونم کمکتون کنم؟</p>
+            </div>
+            <div class="carousel-item card">
+              <h4>کاربر بلو</h4>
+              <p>سلام چطور می تونم کمکتون کنم؟</p>
+            </div>
+            <div class="carousel-item card">
+              <h4>کاربر بلو</h4>
+              <p>سلام چطور می تونم کمکتون کنم؟</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="swiper-section">
+        <div class="container">
+          <h2>ما را در شبکه‌های اجتماعی دنبال کنید</h2>
+          <div class="swiper-row">
+            <div class="card">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat, consequatur.
+              </p>
+              <div class="user-detail-wrapper">
+                <div class="user-avatar">
+                  <img src="public/tweet-avatar.png" alt="" />
+                </div>
+                <div class="user-name"></div>
+                <div class="user-platform-x"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
